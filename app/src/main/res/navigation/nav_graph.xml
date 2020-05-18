@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.hunter.roam.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first" >
+
+        <action
+            android:id="@+id/action_FirstFragment_to_emergencyContactFragment3"
+            app:destination="@id/emergencyContactFragment3" />
+        <action
+            android:id="@+id/action_FirstFragment_to_myGroupFragment"
+            app:destination="@id/myGroupFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_itineraryFragment"
+            app:destination="@id/itineraryFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_wheremFragment"
+            app:destination="@id/wheremFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_myNotesFragment"
+            app:destination="@id/myNotesFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_translatorFragment"
+            app:destination="@id/translatorFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_setUpTripFragment"
+            app:destination="@id/setUpTripFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emergencyContactFragment3"
+        android:name="com.hunter.roam.EmergencyContactFragment"
+        android:label="fragment_emergency_contact"
+        tools:layout="@layout/fragment_emergency_contact" />
+    <fragment
+        android:id="@+id/myGroupFragment"
+        android:name="com.hunter.roam.MyGroupFragment"
+        android:label="fragment_mygroup"
+        tools:layout="@layout/fragment_mygroup" />
+    <fragment
+        android:id="@+id/itineraryFragment"
+        android:name="com.hunter.roam.ItineraryFragment"
+        android:label="fragment_itinerary"
+        tools:layout="@layout/fragment_itinerary" />
+    <fragment
+        android:id="@+id/wheremFragment"
+        android:name="com.hunter.roam.WheremFragment"
+        android:label="fragment_wherem"
+        tools:layout="@layout/fragment_wherem" />
+    <fragment
+        android:id="@+id/myNotesFragment"
+        android:name="com.hunter.roam.MyNotesFragment"
+        android:label="fragment_mynotes"
+        tools:layout="@layout/fragment_mynotes" />
+    <fragment
+        android:id="@+id/translatorFragment"
+        android:name="com.hunter.roam.TranslatorFragment"
+        android:label="fragment_translator"
+        tools:layout="@layout/fragment_translator" />
+    <fragment
+        android:id="@+id/setUpTripFragment"
+        android:name="com.hunter.roam.SetUpTripFragment"
+        android:label="fragment_setup_trip"
+        tools:layout="@layout/fragment_setup_trip" />
+</navigation>

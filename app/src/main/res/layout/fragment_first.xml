@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <!--LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/btn_EmergencyContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:text="@string/text_EmergencyContact" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <RadioButton
+                android:id="@+id/btn_Itinery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:text="@string/text_Itinery" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <RadioButton
+                android:id="@+id/btn_MyGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:text="@string/text_MyGroup" />
+        </RadioGroup>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/btn_WhereAmI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:text="@string/text_WhereAmI" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <RadioButton
+                android:id="@+id/btn_MyNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:text="@string/text_MyNotes" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <RadioButton
+                android:id="@+id/btn_Translator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_Translator" />
+        </RadioGroup>
+    </LinearLayout-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="214dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_EmergencyContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_EmergencyContact"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/txt_Itinerary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_Itinery"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/txt_MyGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_MyGroup"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="168dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_WhereAmI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_WhereAmI"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/txt_MyNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_MyNotes"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/txt_Translator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_Translator"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="205dp"
+            tools:layout_editor_absoluteY="320dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
